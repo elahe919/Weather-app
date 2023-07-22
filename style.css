@@ -71,19 +71,23 @@
   
   .heading {
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: 0.02em;
     padding: 0 0 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .top-banner form {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   
   .top-banner form input {
-    font-size: 2rem;
+    font-size: 1.5rem;
     height: 40px;
     padding: 5px 5px 10px;
     border-bottom: 1px solid;
@@ -94,10 +98,10 @@
   }
   
   .top-banner form button {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bold;
     letter-spacing: 0.1em;
-    padding: 15px 20px;
+    padding: 10px 20px;
     margin-left: 15px;
     border-radius: 5px;
     background: var(--red);
@@ -108,7 +112,7 @@
     background: var(--darkred);
   }
   
-  .top-banner form .msg {
+  .top-banner form .error-msg {
     position: absolute;
     bottom: -40px;
     left: 0;
@@ -120,7 +124,8 @@
   /* SECTION #2
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .ajax-section {
-    margin: 70px 0 20px;
+    margin-top: 20px;
+    /* margin: 30px 0 20px; */
   }
   
   .ajax-section .cities {
@@ -131,7 +136,7 @@
   
   .ajax-section .city {
     position: relative;
-    padding: 40px 10%;
+    padding: 30px 5%;
     border-radius: 20px;
     background: var(--text_light);
     color: var(--text_med);
@@ -155,12 +160,24 @@
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
+
+  .ajax-section figure {
+  display: flex;
+  justify-content: center; 
+  flex-direction: column;
+  align-items: center;
+  }
+  
   
   .ajax-section .city-temp {
-    font-size: 5rem;
+    font-size: 3.5rem;
     font-weight: bold;
     margin-top: 10px;
     color: var(--text_dark);
+    text-align: center;
+  }
+  .ajax-section .city-name {
+    text-align: center;
   }
   
   .ajax-section .city sup {
@@ -176,8 +193,9 @@
   
   .ajax-section .city-icon {
     margin-top: 10px;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+ 
   }
   
   
@@ -217,7 +235,7 @@
       margin: 20px 0 0 0;
     }
     
-    .top-banner form .msg {
+    .top-banner form .error-msg  {
       position: static;
       max-width: none;
       min-height: 0;
